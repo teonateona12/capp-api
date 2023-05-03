@@ -1,6 +1,7 @@
 import { Router } from "express";
-import { getData } from "../controler/dataControler.js";
+import { addData, getData } from "../controler/dataControler.js";
 const data = Router();
 data.get("/getdata", getData);
+data.post("/addata", addData);
 
 export default data;

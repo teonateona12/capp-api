@@ -1,11 +1,11 @@
 [
   {
-    "id": 1,
-    "name": "Roman Ayala",
-    "email": "romanayala@gology.com",
-    "gender": "male",
-    "address": { "street": "Garnet Street", "city": "Chicago" },
-    "phone": "+1 (810) 564-2473"
+    "id": "",
+    "name": "",
+    "email": "",
+    "gender": "",
+    "address": { "street": "", "city": "" },
+    "phone": ""
   },
   {
     "id": 2,

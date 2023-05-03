@@ -1,13 +1,5 @@
 [
   {
-    "id": "",
-    "name": "",
-    "email": "",
-    "gender": "",
-    "address": { "street": "", "city": "" },
-    "phone": ""
-  },
-  {
     "id": 2,
     "name": "Melva Rogers",
     "email": "melvarogers@gology.com",

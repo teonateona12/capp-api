@@ -13,13 +13,12 @@ export function getData(req, res) {
 }
 
 export function addData(req, res) {
-  const newData = req.body;
   fs.readFile("data.json", (err, data) => {
     if (err) {
       res.status(500).send("Error reading file");
     } else {
       const jsonData = JSON.parse(data);
-      jsonData.push(newData);
+      jsonData.push(req.body);
       fs.writeFile("data.json", JSON.stringify(jsonData), (err) => {
         if (err) {
           res.status(500).send("Error writing file");
@@ -37,7 +36,7 @@ export function updateData(req, res) {
 
   const updateData = req.body;
   const index = data.findIndex((item) => item.id == id);
-  if (index === -1) {
+  if (index == -1) {
     return res.status(404).send("Data not found");
   }
 
